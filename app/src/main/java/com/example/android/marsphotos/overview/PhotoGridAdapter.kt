@@ -40,12 +40,12 @@ class PhotoGridAdapter :
         }
     }
 
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): PhotoGridAdapter.MarsPhotosViewHolder {
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MarsPhotosViewHolder {
         return MarsPhotosViewHolder(GridViewItemBinding.inflate(
             LayoutInflater.from(parent.context)))
     }
 
-    override fun onBindViewHolder(holder: PhotoGridAdapter.MarsPhotosViewHolder, position: Int) {
+    override fun onBindViewHolder(holder: MarsPhotosViewHolder, position: Int) {
         val marsPhoto = getItem(position)
         holder.bind(marsPhoto)
     }
